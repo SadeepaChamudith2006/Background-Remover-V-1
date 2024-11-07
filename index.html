@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Remover</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1 class="h1">Background Remover</h1>
+    <input type="file" id="imageUpload" accept="image/*" />
+    
+    <div class="buttons">
+        <button id="removeBtn" onclick="removeBackground()" class="rbg">Remove Background</button>
+        <button id="downloadBtn" onclick="downloadImage()">Download</button>
+    </div>
+
+    <div id="successMessage">Background removed successfully!</div>
+    <div class="loader" id="loadingMessage">Removing background...</div>
+    <img id="imagePreview" class="image-preview" src="" alt="Processed Image" />
+</div>
+<div style="color: white;" class="im">Developer By Sadeepa Chamudith</div>
+<script src="script/script.js">
+   
+</script>
+
+</body>
+</html>
